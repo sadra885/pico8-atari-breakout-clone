@@ -1,0 +1,31 @@
+ball_x=1
+ball_dx=1-- peespeed and poospeed
+ball_y=1
+ball_dy=1
+ball_r=2
+
+
+function _init()
+	cls()
+end
+
+function _update()
+	ball_x=ball_x + ball_dx
+	ball_y=ball_y + ball_dy
+	
+	if ball_x>127 or ball_x<0 then
+		ball_dx = -ball_dx
+	end
+	
+		
+	if ball_y>127 or ball_y<0 then
+		ball_dy = -ball_dy
+	end
+	
+	
+end
+
+function _draw()
+	cls()
+	circfill(ball_x, ball_y, ball_r, 10)
+end
