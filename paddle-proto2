@@ -7,7 +7,6 @@ ball_dr=0.5
 pad_x=54
 pad_y=120
 pad_dx=0
-pad_dy=0
 pad_w=24 --width
 pad_h=2 --height
 
